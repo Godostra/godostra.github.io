@@ -27,14 +27,20 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num/"
 
 # Third-party services
 # just leave someone empty to disable it
 # google_analytics:
 disqus_shortname:
 
-# used this for post_excerpt at index_page
-excerpt_separator: <!--description-->
+# for posts
+# By default, an excerpt is the first paragraph of content in a post, but it
+# can be customized by using this variable
+excerpt_separator: <!--more-->
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
