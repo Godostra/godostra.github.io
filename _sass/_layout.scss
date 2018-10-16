@@ -77,7 +77,7 @@ body {
     color: $text-color;
     line-height: 1.0;
     display: block;
-    padding: 5px 0px 0px 80px;
+    padding: 5px 0px 0px 20px;
 
 
     li {
@@ -92,6 +92,15 @@ body {
       font-weight: 500;
     }
   }
+}
+
+.verticalLineGold {
+  border-left: thick solid #ffd700;
+}
+
+.verticalLineDeepSkyBlue {
+  border-left: thick solid #00BFFF;
+  padding-left: 30px;
 }
 
 /* site-nav */
@@ -167,7 +176,7 @@ input#menu-toggle {
 
 
 .site-header {
-  text-align:right;
+  text-align:center;
   @include media-query($on-laptop){
     text-align: center;
     margin-bottom: 40px;

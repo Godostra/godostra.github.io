@@ -6,16 +6,16 @@
       <div class="container">
         <div class="three columns">
           {% include header.html %}
+          {% include menu-right.html %}
         </div>
-
-        <div class="nine columns" style="z-index:100;">
+        <div class="nine columns verticalLineDeepSkyBlue" style="z-index:100;">
           <div class="wrapper">
             {{ content }}
           </div>
         </div>
       </div>
       <div class="container">
-        <p style="text-align: right;"><a href="https://github.com/Godostra/godostra.github.io/tree/master/{{ page.path }}">Edit or Improve this page</a></p>
+        <p style="text-align: right;"><span class="fas fa-edit"></span>&nbsp;<a href="https://github.com/Godostra/godostra.github.io/tree/master/{{ page.path }}">Edit or Improve this page</a></p>
       </div>
       {% include footer.html %}
     </div>
